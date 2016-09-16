@@ -25,7 +25,7 @@ class ImageNodes{
         this.ctx = this.canvas.getContext("2d");
         this.photo = null;
         this.density = 6;
-        this.sensivity = 2;
+        this.sensivity = 3;
         this.particles = [];
         this.imageData = null;
 
@@ -64,7 +64,7 @@ class ImageNodes{
                 if(red <= 17 && green <= 17 && blue <= 17 && alpha <= 0) continue;
 
                 this.particles.push(
-                    new Particle(x, y, 1.75, { r: red, g: green, b: blue, a: alpha })
+                    new Particle(x, y, 1.5, { r: red, g: green, b: blue, a: alpha })
                 );
             }
         }
