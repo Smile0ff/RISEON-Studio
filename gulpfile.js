@@ -43,8 +43,8 @@ gulp.task("css", () => {
 });
 
 gulp.task("fonts", () => {
-    gulp.src(cfg.fonts +"**/*.*")
-        .pipe(gulp.dest(cfg.build +"/fonts/"));
+    gulp.src(cfg.fonts +"/**/*.*")
+        .pipe(gulp.dest(cfg.build +"/fonts"));
 });
 
 gulp.task("images", function(){
