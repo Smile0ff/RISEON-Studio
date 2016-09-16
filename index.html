@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>RISEON - Design studio</title>
-    <!--meta name="HandheldFriendly" content="True">
+    <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
     <meta name="format-detection" content="telephone=no">
@@ -12,27 +12,25 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"
-    <meta http-equiv="cleartype" content="on">-->
+    <meta http-equiv="cleartype" content="on">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="Description" content="Описание необходимых мета-тегов." />
-    <!--meta name="msapplication-TileImage" content="assets/images/favicons/ms/144x144.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <link rel="apple-touch-icon" href="assets/images/favicons/apple/57x57.png">
-    <link rel="apple-touch-icon" href="assets/images/favicons/apple/60x60.png">
-    <link rel="apple-touch-icon" href="assets/images/favicons/apple/72x72.png">
-    <link rel="apple-touch-icon" href="assets/images/favicons/apple/76x76.png">
-    <link rel="apple-touch-icon" href="assets/images/favicons/apple/76x76.png">
-    <link rel="apple-touch-icon" href="assets/images/favicons/apple/114x114.png">
-    <link rel="apple-touch-icon" href="assets/images/favicons/apple/120x120.png">
-    <link rel="apple-touch-icon" href="assets/images/favicons/apple/144x144.png">
-    <link rel="apple-touch-icon" href="assets/images/favicons/apple/152x152.png">
-    <link rel="apple-touch-icon" href="assets/images/favicons/apple/180x180.png">
-    <link rel="icon" type="image/png" href="assets/images/favicons/16x16.png">
-    <link rel="icon" type="image/png" href="assets/images/favicons/32x32.png">
-    <link rel="icon" type="image/png" href="assets/images/favicons/96x96.png">
-    <link rel="icon" type="image/png" href="assets/images/favicons/160x160.png">
-    <link rel="icon" type="image/png" href="assets/images/favicons/192x192.png"-->
+    <meta name="msapplication-TileImage" content="build/images/favicons/144x144.png">
+    <meta name="msapplication-TileColor" content="#111111">
+    <link rel="apple-touch-icon" href="build/images/favicons/57x57.png">
+    <link rel="apple-touch-icon" href="build/images/favicons/60x60.png">
+    <link rel="apple-touch-icon" href="build/images/favicons/72x72.png">
+    <link rel="apple-touch-icon" href="build/images/favicons/76x76.png">
+    <link rel="apple-touch-icon" href="build/images/favicons/114x114.png">
+    <link rel="apple-touch-icon" href="build/images/favicons/120x120.png">
+    <link rel="apple-touch-icon" href="build/images/favicons/144x144.png">
+    <link rel="apple-touch-icon" href="build/images/favicons/152x152.png">
+    <link rel="apple-touch-icon" href="build/images/favicons/180x180.png">
+    <link rel="icon" type="image/png" href="build/images/favicons/16x16.png">
+    <link rel="icon" type="image/png" href="build/images/favicons/32x32.png">
+    <link rel="icon" type="image/png" href="build/images/favicons/96x96.png">
+    <link rel="icon" type="image/png" href="build/images/favicons/160x160.png">
+    <link rel="icon" type="image/png" href="build/images/favicons/192x192.png">
     <link rel="stylesheet" href="build/css/app.bundle.min.css">
 </head>
 <body>
@@ -42,13 +40,30 @@
                 <div id="image-nodes-holder">
                     <canvas id="image-nodes"></canvas>
                 </div>
+                <div id="image-nodes-fallback">
+                    <img src="build/images/logo.png" alt="RISEON - Design studio">
+                </div>
+                <div id="socials-holder">
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/arturrise" class="icon icon-instagram" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="https://vk.com/riseofficial" class="icon icon-vk" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/riseonstudio" class="icon icon-facebook" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="small-logo-holder">
+                    <a href="/">
+                        <img src="build/images/logo-small.png" alt="RISEON - Design studio">
+                    </a>
+                </div>
             </section>
         </main>
     </div>
-    <script src="jspm_packages/system.js"></script>
-    <script src="jspm.config.js"></script>
-    <script>
-        System.import("assets/js/app");
-    </script>
+    <script src="build/js/app.bundle.min.js"></script>
 </body>
 </html>

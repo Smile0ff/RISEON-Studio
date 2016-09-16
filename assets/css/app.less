@@ -16,7 +16,11 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*  Intro section start                       */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.intro-section{
+    position: relative;
+}
 #image-nodes-holder{
+    display: block;
     width: 100%;
     height: 100%;
     position: relative;
@@ -30,6 +34,92 @@
         background: transparent;
     }
 }
+#image-nodes-fallback{
+    display: none;
+    width: 19.53125%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    overflow: hidden;
+}
+#socials-holder{
+    width: 70px;
+    height: auto;
+    position: absolute;
+    left: 120px;
+    bottom: 50px;
+    z-index: 10;
+    overflow: hidden;
+    & > ul{
+        display: block;
+        width: 100%;
+        height: auto;
+        & > li{
+            display: block;
+            width: 14px;
+            float: left;
+            margin-right: 14px;
+            &:last-child{ margin-right: 0; }
+            a{
+                display: block;
+                width: 100%;
+                line-height: 14px;
+                color: @grey;
+                font-size: .875em;
+                transition: all .5s ease;
+                &:hover{
+                    color: @white;
+                }   
+            }
+        }
+    }
+}
+#small-logo-holder{
+    width: 150px;
+    height: auto;
+    position: absolute;
+    right: 120px;
+    bottom: 50px;
+    z-index: 10;
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*  Intro section end                         */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*  adaptive start                            */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media only screen and @tabletPortrait{
+
+    #image-nodes-holder{ display: none; }
+    #image-nodes-fallback{
+        display: block;
+        width: 48.828125%;
+    }
+    #small-logo-holder{ display: none; }
+    #socials-holder{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+
+@media only screen and @tabletLandscape{
+    
+    #image-nodes-holder{ display: none; }
+    #image-nodes-fallback{
+        display: block;
+        width: 25%;
+    }
+    #small-logo-holder{ display: none; }
+    #socials-holder{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*  adaptive end                              */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
