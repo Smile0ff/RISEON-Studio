@@ -1,0 +1,29 @@
+{
+  "name": "riseon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.0.3",
+    "imagemin-pngquant": "^5.0.0",
+    "jspm": "^0.16.45"
+  },
+  "jspm": {
+    "configFile": "jspm.config.js",
+    "dependencies": {
+      "jquery": "npm:jquery@^3.1.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
