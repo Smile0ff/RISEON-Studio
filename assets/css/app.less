@@ -51,7 +51,6 @@
     left: 120px;
     bottom: 50px;
     z-index: 10;
-    overflow: hidden;
     & > ul{
         display: block;
         width: 100%;
@@ -63,9 +62,9 @@
             margin-right: 14px;
             &:last-child{ margin-right: 0; }
             a{
-                display: block;
+                display: inline-block;
+                vertical-align: top;
                 width: 100%;
-                line-height: 14px;
                 color: @grey;
                 font-size: .875em;
                 transition: all .5s ease;
@@ -98,7 +97,13 @@
         display: block;
         width: 48.828125%;
     }
-    #small-logo-holder{ display: none; }
+    #small-logo-holder{
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
+        bottom: auto;
+    }
     #socials-holder{
         left: 50%;
         transform: translateX(-50%);
@@ -113,10 +118,14 @@
         display: block;
         width: 25%;
     }
-    #small-logo-holder{ display: none; }
+    #small-logo-holder{
+        width: 80px;
+        right: 40px;
+        bottom: 40px;
+    }
     #socials-holder{
-        left: 50%;
-        transform: translateX(-50%);
+        left: 40px;
+        bottom: 40px;
     }
 
 }
